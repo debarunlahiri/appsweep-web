@@ -2,5 +2,8 @@ node_modules
 .next
 out
 .sites-runtime
+.openai
+AGENTS.md
+CLAUDE.md
 .DS_Store
 *.log

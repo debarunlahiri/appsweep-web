@@ -1,10 +1,10 @@
 :root {
-  --page: #f5f5f7;
-  --white: #ffffff;
-  --ink: #171719;
-  --muted: #68686d;
-  --line: #d9d9de;
-  --blue: #2563eb;
+  --page: #0d0e10;
+  --white: #17181b;
+  --ink: #f4f4f5;
+  --muted: #a0a1a7;
+  --line: #292a2f;
+  --blue: #4f7df3;
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +18,7 @@ img { display: block; max-width: 100%; }
 .brand img { border-radius: 9px; }
 .site-header nav { display: flex; align-items: center; gap: 28px; font-size: .9rem; color: var(--muted); }
 .site-header nav a:hover { color: var(--ink); }
-.header-download { color: white !important; background: var(--ink); border-radius: 8px; padding: 9px 14px; }
+.header-download { color: #111214 !important; background: #f1f1f2; border-radius: 8px; padding: 9px 14px; }
 
 .hero { max-width: 920px; margin: 0 auto; padding: 112px 24px 92px; text-align: center; }
 .hero-app-icon { width: 104px; height: 104px; margin: 0 auto 27px; border-radius: 23px; }
@@ -28,26 +28,33 @@ img { display: block; max-width: 100%; }
 .hero-actions { display: flex; justify-content: center; align-items: center; gap: 18px; }
 .hero-actions > span { color: var(--muted); font-size: .84rem; }
 .primary-button { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 17px; border: 0; border-radius: 9px; background: var(--blue); color: white; font: inherit; font-weight: 650; }
-.primary-button:hover { background: #174fc8; }
+.primary-button:hover { background: #668df4; }
 .primary-button:disabled { opacity: .45; cursor: not-allowed; }
 
 .overview { width: min(1380px, calc(100% - 32px)); margin: 0 auto; }
-.overview img { width: 100%; height: auto; border: 1px solid #343438; border-radius: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.18); }
+.overview img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, .24),
+    0 48px 120px rgba(0, 0, 0, .2);
+}
 
 .about-section { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 150px 0 130px; display: grid; grid-template-columns: .85fr 1.15fr; gap: 100px; }
 .section-intro > p, .review-copy > p:first-child { margin: 0 0 14px; color: var(--blue); font-size: .84rem; font-weight: 650; }
 .section-intro h2, .review-copy h2 { margin: 0; font-size: clamp(2.4rem, 4.5vw, 4.6rem); line-height: 1.05; letter-spacing: -.05em; }
 .detail-list { border-top: 1px solid var(--line); }
 .detail-list article { display: grid; grid-template-columns: 48px 1fr; gap: 10px; padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
-.detail-list article > span { color: #9a9a9f; font-family: var(--font-geist-mono), monospace; font-size: .78rem; padding-top: 4px; }
+.detail-list article > span { color: #777980; font-family: var(--font-geist-mono), monospace; font-size: .78rem; padding-top: 4px; }
 .detail-list h3 { margin: 0 0 8px; font-size: 1.1rem; }
 .detail-list p { margin: 0; color: var(--muted); line-height: 1.6; }
 
-.review-section { background: #151516; color: white; padding: 120px max(24px, calc((100vw - 1180px) / 2)); display: grid; grid-template-columns: .72fr 1.28fr; align-items: center; gap: 72px; }
+.review-section { background: #08090b; color: white; padding: 120px max(24px, calc((100vw - 1180px) / 2)); display: grid; grid-template-columns: .72fr 1.28fr; align-items: center; gap: 72px; }
 .review-copy { max-width: 460px; }
 .review-copy > p:first-child { color: #78a2ff; }
 .review-description { margin: 25px 0 0; color: #a9a9ae; font-size: 1.04rem; line-height: 1.65; }
-.review-section > img { width: 100%; height: auto; border: 1px solid #404044; border-radius: 11px; }
+.review-section > img { width: 100%; height: auto; border-radius: 11px; }
 
 .download-section { width: min(980px, calc(100% - 48px)); margin: 0 auto; min-height: 260px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px; border-bottom: 1px solid var(--line); }
 .download-section > img { border-radius: 17px; }
@@ -60,8 +67,8 @@ footer { width: min(980px, calc(100% - 48px)); min-height: 120px; margin: 0 auto
 footer > div:first-child { display: grid; gap: 3px; }
 footer strong { color: var(--ink); font-size: .94rem; }
 .contact-links { display: flex; gap: 6px; }
-.contact-links a { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: white; }
-.contact-links a:hover { border-color: #9b9ba0; color: var(--ink); }
+.contact-links a { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: var(--white); }
+.contact-links a:hover { border-color: #686a72; color: var(--ink); }
 footer > p { margin: 0; text-align: right; }
 
 @media (max-width: 820px) {

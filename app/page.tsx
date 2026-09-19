@@ -9,8 +9,6 @@ const details = [
 ];
 
 export default function Home() {
-  const downloadUrl = process.env.NEXT_PUBLIC_DMG_URL;
-
   return (
     <main id="top">
       <header className="site-header">
@@ -33,11 +31,9 @@ export default function Home() {
           AppSweep finds related files and background services, shows you what it found, and lets you choose exactly what should be removed.
         </p>
         <div className="hero-actions">
-          {downloadUrl ? (
-            <a className="primary-button" href={downloadUrl} download><Download size={18} /> Download AppSweep</a>
-          ) : (
-            <a className="primary-button" href="#download"><Download size={18} /> Download AppSweep</a>
-          )}
+          <a className="primary-button" href="/AppSweep-1.0.dmg" download>
+            <Download size={18} /> Download AppSweep
+          </a>
           <span>Requires macOS 14 or later</span>
         </div>
       </section>
@@ -86,14 +82,9 @@ export default function Home() {
       <section className="download-section" id="download">
         <Image src="/appsweep-icon.png" alt="" width={76} height={76} />
         <div><h2>AppSweep 1.0</h2><p>For macOS 14 and later.</p></div>
-        {downloadUrl ? (
-          <a className="primary-button" href={downloadUrl} download><Download size={18} /> Download DMG</a>
-        ) : (
-          <div className="download-unavailable">
-            <button className="primary-button" type="button" disabled><Download size={18} /> Download DMG</button>
-            <span>DMG coming soon</span>
-          </div>
-        )}
+        <a className="primary-button" href="/AppSweep-1.0.dmg" download>
+          <Download size={18} /> Download DMG
+        </a>
       </section>
 
       <footer>
