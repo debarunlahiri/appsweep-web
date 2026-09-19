@@ -43,12 +43,14 @@ export default function PrivacyPage() {
 
         <section className="legal-section">
           <h2>4. Website information</h2>
-          <p>The AppSweep website does not currently provide user accounts, advertising, analytics, or tracking cookies. When you visit the website or download the DMG, hosting and network providers may process standard request information such as your IP address, browser information, requested URL, date and time, and download activity to deliver and secure the service.</p>
+          <p>The AppSweep website does not provide user accounts or advertising. It uses Vercel Web Analytics to understand aggregate website traffic and page views without using tracking cookies.</p>
+          <p>Analytics data may include the page visited, referrer, approximate location, browser, operating system, device type, and event time. Vercel states that this data is anonymized, used for aggregate statistics, and is not associated with an individual or an IP address.</p>
+          <p>When you visit the website or download the DMG, hosting and network providers may also process standard request information such as your IP address, browser information, requested URL, date and time, and download activity to deliver and secure the service.</p>
         </section>
 
         <section className="legal-section">
           <h2>5. External services</h2>
-          <p>The website and application link to GitHub, LinkedIn, and email services. Information you provide to those services is handled under their respective privacy policies.</p>
+          <p>The website uses Vercel for hosting and analytics and links to GitHub, LinkedIn, and email services. Information processed by those services is handled under their respective privacy policies.</p>
         </section>
 
         <section className="legal-section">
@@ -59,6 +61,7 @@ export default function PrivacyPage() {
         <section className="legal-section">
           <h2>7. Retention and your choices</h2>
           <p>Local AppSweep data remains on your Mac until it is removed through Finder or by uninstalling AppSweep and deleting its application-support data. Retention of website server logs, if any, is controlled by the relevant hosting provider.</p>
+          <p>Vercel Web Analytics does not use third-party cookies. Browser content blockers may prevent analytics requests from being sent.</p>
           <p>You may contact us to ask a privacy question or request deletion of information you directly provided through email.</p>
         </section>
 

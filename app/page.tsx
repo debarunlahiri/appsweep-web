@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Download, Mail } from "lucide-react";
+import { BadgeDollarSign, Download, Mail, ShieldCheck, WifiOff } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const details = [
@@ -47,6 +47,32 @@ export default function Home() {
           height={1756}
           priority
         />
+      </section>
+
+      <section className="privacy-promise" aria-labelledby="privacy-promise-title">
+        <div className="privacy-promise-inner">
+          <div className="privacy-promise-copy">
+            <p>Private by design</p>
+            <h2 id="privacy-promise-title">Your Mac stays your business.</h2>
+            <p>
+              The AppSweep application works entirely on your Mac. It does not need an internet connection, show ads, track your activity, or upload information about your apps and files. It is completely free to use.
+            </p>
+          </div>
+          <div className="privacy-points">
+            <article>
+              <WifiOff aria-hidden="true" />
+              <div><h3>No internet required</h3><p>Scanning and removal happen locally on your Mac.</p></div>
+            </article>
+            <article>
+              <ShieldCheck aria-hidden="true" />
+              <div><h3>No ads or app tracking</h3><p>The app has no analytics, advertising, accounts, or personal-data collection.</p></div>
+            </article>
+            <article>
+              <BadgeDollarSign aria-hidden="true" />
+              <div><h3>Completely free</h3><p>No subscription, trial period, or hidden paid features.</p></div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section className="about-section" id="about">
