@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Download, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -89,6 +90,10 @@ export default function Home() {
 
       <footer>
         <div><strong>AppSweep</strong><span>Made by Debarun Lahiri</span></div>
+        <div className="footer-links">
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+        </div>
         <div className="contact-links">
           <a href="https://github.com/debarunlahiri/" aria-label="GitHub"><FaGithub size={19} /></a>
           <a href="https://www.linkedin.com/in/debarun-lahiri-a67875126/" aria-label="LinkedIn"><FaLinkedin size={19} /></a>
